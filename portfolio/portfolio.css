@@ -1,0 +1,156 @@
+body {
+    /* modifica o corpo da pagina com fonte, cor e etc.. */
+    font-family: Arial, sans-serif;
+    background-color: #ccc8c8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* estiliza o cabeçalho do site com cores e bordas */
+    background-color: #FAF0E6;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    /* muda a cor do h1 para↓ */
+    color: #1A3C63;
+}
+
+p {
+    /* muda o tamanho da fonte dos paragrafos  */
+    font-size: 1.1em;
+}
+
+main {
+    /* deixa tudo que está na classe main nesse padrao */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.button-container {
+    /* ativa os modelos de layout dos botões */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button {
+    /* estiliza os botoes */
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    /* muda as cores do fundo dos botões quando passa o mouse por cima */
+    background-color: #242121;
+}
+
+.notepad {
+    /* estiliza o notepad */
+    background-color: #FAF0E6;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin-top: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notepad h2 {
+    /* modifica o h2 dentro do notepad */
+    color: #1A3C63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+/* Aluno: Kauã Santos de Almeida
+RU: 4749025 */
+
+.portfolio-link {
+    /* coloca os links do site com o auto layout */
+    margin-left: auto;
+}
+
+.portfolio-link a {
+    /* tira a barra abaixo do link e adiciona cor */
+    text-decoration: none;
+    color: #1A3C63;
+}
+
+.notepad p {
+    /* modifica os paragrafos dentro do notepad */
+    color: #333;
+    line-height: 1.6;
+}
+
+.highlight {
+    /* modifica um texto declarado como 'span' */
+    color: #5facc4;
+}
+
+.portfolio-items-container {
+    /* adicioa layout para os blocos de 'trabalho' do aluno  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    height: 640;
+}
+
+.portfolio-item {
+    /* modifica os itens dentro de cada bloco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a79e8e56;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+    width: 300px;
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    /* coloca sombra quando o mouse é passado por cima de cada item */
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 07);
+}
+
+.portfolio-image {
+    /* adiciona um padrao de altura max e min as imagens */
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio-text {
+    /* modifica o texto escritos abaixo das imagens */
+    font-size: 16.1px;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.portfolio-text strong {
+    /* modifica o texto de cada jogo quando é chamado */
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}

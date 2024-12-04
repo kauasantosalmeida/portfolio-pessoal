@@ -1,0 +1,85 @@
+body {
+    /* modifica o corpo da pagina com fonte, cor e etc.. */
+    font-family: Arial, sans-serif;
+    background-color: #ccc8c8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* estiliza o cabeçalho do site com cores e bordas */
+    background-color: #FAF0E6;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    /* muda a cor do h1 para↓ */
+    color: #1A3C63;
+}
+
+p {
+    /* muda o tamanho da fonte dos paragrafos  */
+    font-size: 1.1em;
+}
+
+/* Aluno: Kauã Santos de Almeida
+RU: 4749025  */
+
+main {
+    /* deixa tudo que está na classe main nesse padrao */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.button-container {
+    /* ativa os modelos de layout dos botões */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button {
+    /* estiliza os botoes */
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    /* muda as cores do fundo dos botões quando passa o mouse por cima */
+    background-color: #242121;
+}
+
+.notepad {
+    /* estiliza o notepad */
+    background-color: #FAF0E6;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    margin-top: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notepad h2 {
+    /* modifica o h2 dentro do notepad */
+    color: #1A3C63;
+}
+
+.notepad p {
+    /* modifica os paragrafos dentro do notepad */
+    color: #333;
+    line-height: 1.6;
+}
+
+.highlight {
+    /* modifica um texto declarado como 'span' */
+    color: #5facc4;
+}

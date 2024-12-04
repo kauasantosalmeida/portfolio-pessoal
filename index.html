@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        body {
+            /* modifica o corpo da pagina com fonte, cor e etc.. */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ccc8c8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            /* estiliza o cabeçalho do site com cores e bordas */
+            background-color: #FAF0E6;
+            color: black;
+            padding: 10px;
+            width: 25%;
+            border: none;
+            border-radius: 17px;
+        }
+
+        button {
+            /* estiliza os botões da pagina com as cores e bordas */
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #FAF0E6;
+            color: black;
+            border: none;
+            border-radius: 11px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            /* modifica a cor do fundo do botão quando o mouse é passado por cima */
+            background-color: darkgray;
+        }
+
+        .highlight {
+            /* modifica um texto declarado como 'span' */
+            color: #1A3C63;
+        }
+    </style>
+    <script>
+        let openedPage = null;
+
+        // verifica se a página de destino já foi aberta
+        function redirectToPage() {
+            if (openedPage && !openedPage.closed) { //Se sim, pergunta ao usuário se deseja reabrir.
+                const openAgain = confirm("Página já aberta! Deseja abrir a página novamente?");
+                if (!openAgain) return;
+            }
+            openedPage = window.open("sobre mim/sobre_mim.html", "_blank");
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Aluno: Kauã Santos de Almeida
+    RU: 4749025 -->
+
+    <header>
+        <!--escreve o nome e o RU do aluno -->
+        <h1 style="margin: 0; font-size: 1.5rem;"><span class="highlight">NOME:</span> Kauã Santos de Almeida</h1>
+        <h2 style="margin: 0; font-size: 1.2rem;"><span class="highlight">RU:</span> 4749025</h2>
+    </header>
+
+    <div>
+        <!-- div do botão para redirecionar para o Portfólio -->
+        <p>Clique no botão ou em qualquer parte da tela para continuar.</p>
+        <button onclick="redirectToPage()">Ir para o Portfólio</button>
+    </div>
+
+    <script>
+        // redireciona ao clicar em qualquer área da página, exceto no botão.
+        document.body.addEventListener('click', function (event) {
+            if (event.target.tagName !== 'BUTTON') {
+                redirectToPage();
+            }
+        });
+    </script>
+</body>
+
+</html>
